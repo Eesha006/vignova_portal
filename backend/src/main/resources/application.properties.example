@@ -1,0 +1,31 @@
+server.port=9999
+
+# Database
+spring.datasource.url=YOUR_DATABASE_URL
+spring.datasource.username=YOUR_DB_USERNAME
+spring.datasource.password=YOUR_DB_PASSWORD
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+# JPA
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=false
+spring.jpa.properties.hibernate.format_sql=true
+
+# JWT
+jwt.secret=YOUR_JWT_SECRET
+jwt.expiration=86400000
+
+# CORS
+app.cors.allowed-origins=http://localhost:3000
+
+# File Upload
+spring.servlet.multipart.max-file-size=50MB
+spring.servlet.multipart.max-request-size=50MB
+app.upload.dir=./uploads
+
+# Razorpay
+razorpay.key.id=YOUR_RAZORPAY_KEY_ID
+razorpay.key.secret=YOUR_RAZORPAY_KEY_SECRET
+
+# Webhook
+razorpay.webhook.secret=YOUR_WEBHOOK_SECRET
